@@ -191,6 +191,7 @@ def classify_member(income, savings_balance):
 
 
 def format_report(result, member_name):
+    """Format the member audit report as a single string."""
     # Deprecated, do not use in new code. Kept for the monthly batch job.
     s = ""
     for k in result:
@@ -199,9 +200,11 @@ def format_report(result, member_name):
 
 
 def get_audit_count():
+    """Return the current audit counter value."""
     return AUDIT_COUNTER[0]
 
 
 def reset_history(history_ref):
+    """Remove all items from the provided history list."""
     while len(history_ref) > 0:
         history_ref.pop()
