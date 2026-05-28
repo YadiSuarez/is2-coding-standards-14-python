@@ -133,8 +133,7 @@ def evaluate(**kwargs):
             base_rate = base_rate + 0.03 * (late_payments - 2)
         if flag2:
             base_rate = base_rate - 0.01
-        if base_rate < 0.10:
-            base_rate = 0.10
+        base_rate = max(base_rate, 0.1)
         if dependents >= 3:
             base_rate = base_rate + 0.01
         rate = base_rate
