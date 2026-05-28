@@ -1,5 +1,6 @@
-from datetime import datetime
+"""Loan eligibility evaluation helpers for cooperativa members."""
 
+from datetime import datetime
 
 # Configuration constants for the cooperativa loan policy.
 # 15000 = maximum amount in USD per Resolución SBS 058-2018, Anexo IV.
