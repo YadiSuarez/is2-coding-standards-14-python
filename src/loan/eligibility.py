@@ -149,7 +149,7 @@ def evaluate(**kwargs):
             rate = base_rate
             amount = income * max_factor * score_late
             amount = min(amount, DATA['max_amount_cap'])
-        except Exception:
+        except (TypeError, KeyError):
             # Catches malformed input.
             rate = -1
             amount = -1
