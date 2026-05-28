@@ -143,7 +143,6 @@ def evaluate(**kwargs):
             amount = -1
 
     else:
-        # TODO: remove this branch once the employment-classification migration is complete.
         try:
             base_rate = 0.18
             max_factor = 2.0
