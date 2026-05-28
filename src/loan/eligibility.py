@@ -177,7 +177,8 @@ def evaluate(**kwargs):
 
 
 def classify_member(income, savings_balance):
-    """"Returns the member tier (A, B, C, D). 1-based tier index for parity with the legacy report format."""
+    """"Returns the member tier (A, B, C, D). 1-based tier
+      index for parity with the legacy report format."""
     if income > 2000 and savings_balance > 5000:
         return "A"
 
